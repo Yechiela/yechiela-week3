@@ -28,19 +28,3 @@ a {
     text-anchor: unset;
     padding: 1px;
 }
-
-textarea {
-    height:50px;
-}
-
-.shipping {
-    display:inline;
-}
-
-#checkshipping:checked + .shipping {
-    display:none;
-}
-
-@media screen and (max-width: 640px) {
-  
-}
