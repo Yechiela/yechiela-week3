@@ -27,28 +27,28 @@
             <p>
                 Please Fill in your payment data
             </p>
-            <p>
-                <form>
-                    <label for="cardname">Name on card</label>
-                    <input type="text" id="cardname" />
-                    <label for="cardtype">Card type</label>
-                    <select id="cardtype">
-                        <option value="VISA">VISA</option>
-                        <option value="MASTERCARD">MASTER CARD</option>
-                    </select>
-                    <label for="cardnumber">Card Number</label>
-                    <input type="number" id="cardnumber" minlength="16"
-                        maxlength="16" />
-                    <label for="firstname">First name</label>
-                    <input type="text" id="firstname" />
-                    <label for="expiremonth">Expiry Month</label>
-                    <input type="month" id="expiremonth" />
-                    <label for="expireyear">Expiry Year</label>
-                    <input type="year" id="expireyear" />
-                    <label for="ccv">CCV</label>
-                    <input type="number" id="ccv" minlength="3" maxlength="3" />
-                </form>
-            </p>
+
+
+            <form>
+                <label for="cardname">Name on card</label>
+                <input type="text" id="cardname" />
+                <label for="cardtype">Card type</label>
+                <select id="cardtype">
+                    <option value="VISA">VISA</option>
+                    <option value="MASTERCARD">MASTER CARD</option>
+                </select>
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" minlength="16"
+                    maxlength="16" />
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" />
+                <label for="expiremonth">Expiry Month</label>
+                <input type="text" id="expiremonth" maxlength="2" />
+                <label for="expireyear">Expiry Year</label>
+                <input type="text" id="expireyear" maxlength="4" minlength="4" />
+                <label for="ccv">CCV</label>
+                <input type="text" id="ccv" minlength="3" maxlength="3" />
+            </form>
         </section>
     </main>
     <footer>

@@ -3,47 +3,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    .shipping {
-        display:inline;
-    }
-
-    #checkshipping:checked + .shipping {
-        display:none;
-    }
-
-    .textbox {
-        width:80%;
-    }
-
-    label {
-        display:block;
-    }
-
-    .row {
-        display:flex;
-    }
-
-    .column {
-        flex:50%;
-        flex: 1 1 auto;
-    }
-
-    .small-column {
-        flex:20%;
-    }
-
-    .big-column {
-        flex:80%;
-    }
-
-    @media screen and (max-width: 600px) {
-        .column {
-            flex:100%;
+    <style>
+        .shipping {
+            display: inline;
         }
-    }
-</style>
+
+        #checkshipping:checked+.shipping {
+            display: none;
+        }
+
+        .textbox {
+            width: 80%;
+        }
+
+        label {
+            display: block;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            flex: 1 1 auto;
+        }
+
+        .small-column {
+            flex: 20%;
+        }
+
+        .big-column {
+            flex: 80%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <header>
@@ -91,14 +91,14 @@
                     </div>
                 </div>
 
-                </div class="row">
-                <div class="column">
-                    <label for="country">Country*</label>
-                    <select id="country" required>
-                        <option value="dansk">Denmark</option>
-                        <option value="others">Others</option>
-                    </select>
-                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="country">Country*</label>
+                        <select id="country">
+                            <option selected>Denmark</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="column">
@@ -117,7 +117,6 @@
                 <label for="checkshipping"><b>Shipping Address</b></label>
                 <input type="checkbox" id="checkshipping" checked />
                 <div class="shipping">
-                    <p>
                         <b>Shipping Address:</b><br>
                         <div class="row">
                             <div class="column">
@@ -132,9 +131,9 @@
                         <div class="row">
                             <div class="column">
                                 <label for="country_ship">Country*</label>
-                                <select id="country_ship" required>
-                                    <option value="dansk">Denmark</option>
-                                    <option value="others">Others</option>
+                                <select id="country_ship">
+                                    <option selected>Denmark</option>
+                                    <option>Others</option>
                                 </select>
                             </div>
                         </div>
@@ -147,10 +146,8 @@
                                 <label for="zipcode_ship">Post code*</label>
                                 <input type="text" id="zipcode_ship" maxlength="4" required />
                             </div>
-                        </div>
-                    </p>
+                        </div>                    
                 </div>
-                <p>
                     <div class="row">
                         <div class="small-column">
                             <b>Profiles Description</b>
@@ -165,7 +162,6 @@
                         </div>
                     </div>
 
-                </p>
             </form>
 
         </section>
