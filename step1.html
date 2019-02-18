@@ -4,7 +4,14 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+    .small {
+        flex:1;
+    }
+    .big {
+        flex:3;
+    }
+</style>
 <body>
     <header>
         <h1>yourcustomtailer.com</h1>
@@ -80,7 +87,7 @@
                 </div>
                 <p>
                     <div style="display:flex;">
-                        <div style="width:20%;">
+                        <div class="small">
                             <b>Profiles Description</b>
                             <br>
                             <i>
@@ -88,7 +95,7 @@
                                 displayed on our social community pages.
                             </i>
                         </div>
-                        <div style="width:80%;">
+                        <div class="big">
                             <textarea id="profiledesc" maxlength="500" style="width:100%;height:100px;"></textarea>
                         </div>
                     </div>
